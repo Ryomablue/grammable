@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.describe GramsController, type: :controller do
   describe "gram#destroy action" do 
-    it "shouldn't allo user who didn't create the gram to destroy it" do
+    it "shouldn't allow user who didn't create the gram to destroy it" do
       gram = FactoryGirl.create(:gram)
       user = FactoryGirl.create(:user)
       sign_in user
